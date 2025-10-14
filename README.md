@@ -4,7 +4,7 @@
 
 # 🚀 QeRL: Beyond Efficiency -- Quantization-enhanced Reinforcement Learning for LLMs
 
-[![Paper](https://img.shields.io/badge/ArXiv-Paper-brown)](https://github.com/NVlabs/QeRL)
+[![Paper](https://img.shields.io/badge/ArXiv-Paper-brown)](https://arxiv.org/abs/2510.11696)
 [![Code](https://img.shields.io/badge/GitHub-QeRL-blue)](https://github.com/NVlabs/QeRL)
 
 
@@ -13,7 +13,7 @@
 
 ## 💡 TLDR: QeRL supports RL for 32B LLMs on a single H100 GPU, maintaining full-parameter FT performance!
 
-**QeRL: Beyond Efficiency -- Quantization-enhanced Reinforcement Learning for LLMs [[Paper](https://github.com/NVlabs/QeRL)]** <br />
+**QeRL: Beyond Efficiency -- Quantization-enhanced Reinforcement Learning for LLMs [[Paper](https://arxiv.org/abs/2510.11696)]** <br />
 
 [Wei Huang](https://aaron-weihuang.com/), [Yi Ge](https://scholar.google.com/citations?user=wYXhPFQAAAAJ&hl=zh-CN), [Shuai Yang](https://andysonys.github.io/), [Yicheng Xiao](https://easonxiao-888.github.io/), [Huizi Mao](https://developer.nvidia.com/zh-cn/blog/author/huizi-mao/), [Yujun Lin](https://yujunlin.com/), [Hanrong Ye](https://research.nvidia.com/person/hanrong-ye), [Sifei Liu](https://sifeiliu.net/), [Ka Chun Cheung](https://scholar.google.com/citations?user=NvbCXToAAAAJ&hl=zh-TW), [Hongxu Yin](https://hongxu-yin.github.io/), [Yao Lu](https://scholar.google.com/citations?user=OI7zFmwAAAAJ&hl=en), [Xiaojuan Qi](https://scholar.google.com/citations?user=bGn0uacAAAAJ&hl=en), [Song Han](http://songhan.mit.edu/), [Yukang Chen](https://yukangchen.com/) <br />
 
@@ -42,7 +42,7 @@ We propose QeRL, a Quantization-enhanced Reinforcement Learning framework for la
 10. [Acknowledgement](#acknowledgement)
 
 ## News
-- [x] [2025.10] We release [Paper](https://arxiv.org/abs/2509.22622), this GitHub repo [QeRL](https://github.com/NVlabs/QeRL) with all training and inference code.
+- [x] [2025.10] We release [Paper](https://arxiv.org/abs/2510.11696), this GitHub repo [QeRL](https://github.com/NVlabs/QeRL) with all training and inference code.
 
 ## Highlights
 1. **Low-cost reinforcement learning**: QeRL support 32B LLM training on single H100 80GB GPU.
@@ -195,12 +195,12 @@ lighteval vllm $MODEL_ARGS "lighteval|$TASK|0|0" \
 Please consider to cite our paper and this framework, if they are helpful in your research.
 ```bibtex
 @article{huang2025qerl,
-      title={QeRL: Beyond Efficiency -- Quantization-enhanced Reinforcement Learning for LLMs},
-      author={Wei Huang and Yi Ge and Shuai Yang and Yicheng Xiao and Huizi Mao and Yujun Lin and Hanrong Ye and Sifei Liu and Ka Chun Cheung and Hongxu Yin and Yao Lu and Xiaojuan Qi and Song Han and Yukang Chen},
+      title={QeRL: Beyond Efficiency -- Quantization-enhanced Reinforcement Learning for LLMs}, 
+      author={Wei Huang and Yi Ge and Shuai Yang and Yicheng Xiao and Huizi Mao and Yujun Lin and Hanrong Ye and Sifei Liu and Ka Chun Cheung and Hongxu Yin and Yao Lu and Xiaojuan Qi and Song Han and Yukang Chen}
       year={2025},
-      eprint={},
+      eprint={2510.11696},
       archivePrefix={arXiv},
-      primaryClass={cs.CV}
+      primaryClass={cs.LG}
 }
 ```
 
@@ -213,6 +213,7 @@ Please consider to cite our paper and this framework, if they are helpful in you
 - [trl](https://github.com/huggingface/trl): our reinforcement learning training framework is built on trl.
 - [open-r1](https://github.com/huggingface/open-r1): our reasoning training recipes are based on open-r1.
 - [Marlin](https://github.com/IST-DASLab/marlin): the inference kernel of NVFP4×BF16 is supported by Marlin kernel.
+
 
 
 
