@@ -6,9 +6,9 @@ pip install trl==0.21.0
 pip install vllm==0.10.1
 # replace vllm/vllm/lora/models.py with vllm_replacement/models.py
 site_pkg_path=$(python -c 'import site; print(site.getsitepackages()[0])')
-cp -rv replacement/vllm_replacement/models.py $site_pkg_path/vllm/vllm/lora/models.py
+cp -rv replacement/vllm_replacement/models.py $site_pkg_path/vllm/lora/models.py
 # replace vllm/vllm/lora/worker_manager.py with vllm_replacement/worker_manager.py
-cp -rv replacement/vllm_replacement/worker_manager.py $site_pkg_path/vllm/vllm/lora/worker_manager.py
+cp -rv replacement/vllm_replacement/worker_manager.py $site_pkg_path/vllm/lora/worker_manager.py
 # make an empty folder to pass asserts in vllm lora requests
 mkdir -p simon_lora_path simon_stub_path
 
